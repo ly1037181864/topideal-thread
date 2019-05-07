@@ -20,23 +20,39 @@ public class ProdCons_TradCondDemo {
     private Condition C1 = lock.newCondition();
     private Condition C2 = lock.newCondition();
     private Condition C3 = lock.newCondition();
+    private static ThreadLocal<Cond> threadLocal = new ThreadLocal();
 
-    public void print(Cond cond) throws InterruptedException {
+    public void print(int num) throws InterruptedException {
+        Cond cond = init(num);
         lock.lock();
         try{
-            int num = cond.getNum();
+            //条件
             while(i != num)
                 cond.getCondC().await();
 
+            //干活
             int count = num == 1 ? 5 : num == 2 ? 10 :15;
             for (int i=1;i<=count;i++)
-                System.out.println(Thread.currentThread().getName()+"\t"+i);
+                System.out.println(Thread.currentThread().getName()+"线程\t 打印第"+i+"次");
 
+            //改变条件
             i = num == 1 ? 2 : num == 2 ? 3 : 1;
+            //唤醒
             cond.getCondN().signal();
         }finally {
             lock.unlock();
         }
+    }
+
+    public Cond init(int num){
+        Cond cond = threadLocal.get();
+        if(cond == null) {
+            Condition c = num == 1 ? C1 : num == 2 ? C2 :C3;
+            Condition n = num == 1 ? C2 : num == 2 ? C3 :C1;
+            cond = new Cond(c,n);
+            threadLocal.set(cond);
+        }
+        return cond;
     }
 
     public static void main(String[] args) {
@@ -44,7 +60,7 @@ public class ProdCons_TradCondDemo {
         new Thread(()->{
             try {
                 for (int i=0;i<10;i++)
-                    demo.print(new Cond(1,demo.getC1(),demo.getC2()));
+                    demo.print(1);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -53,7 +69,7 @@ public class ProdCons_TradCondDemo {
         new Thread(()->{
             try {
                 for (int i=0;i<10;i++)
-                    demo.print(new Cond(2,demo.getC2(),demo.getC3()));
+                    demo.print(2);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -62,70 +78,28 @@ public class ProdCons_TradCondDemo {
         new Thread(()->{
             try {
                 for (int i=0;i<10;i++)
-                    demo.print(new Cond(3,demo.getC3(),demo.getC1()));
+                    demo.print(3);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         },"CC").start();
     }
-
-    public Condition getC1() {
-        return C1;
-    }
-
-    public void setC1(Condition c1) {
-        C1 = c1;
-    }
-
-    public Condition getC2() {
-        return C2;
-    }
-
-    public void setC2(Condition c2) {
-        C2 = c2;
-    }
-
-    public Condition getC3() {
-        return C3;
-    }
-
-    public void setC3(Condition c3) {
-        C3 = c3;
-    }
 }
 class Cond {
-    private int num;
-    private Condition condC;
-    private Condition condN;
+    private Condition condC;//当前Condition
+    private Condition condN;//下一个Condition
 
-    public Cond(int i,Condition c,Condition n){
-        this.num = i;
+    public Cond(Condition c,Condition n){
         this.condC = c;
         this.condN = n;
-    }
-
-    public int getNum() {
-        return num;
-    }
-
-    public void setNum(int num) {
-        this.num = num;
     }
 
     public Condition getCondC() {
         return condC;
     }
 
-    public void setCondC(Condition condC) {
-        this.condC = condC;
-    }
-
     public Condition getCondN() {
         return condN;
-    }
-
-    public void setCondN(Condition condN) {
-        this.condN = condN;
     }
 }
 
