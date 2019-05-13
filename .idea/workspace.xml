@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83205efc-4a39-4f8f-84dd-f8bd44a857e2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/thread/DealLockDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/single/SingleDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/threadvolatile/VolatileDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/topideal-thread/thread/DealLockDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/topideal-thread/thread/DealLockDemo.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,15 +16,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="DealLockDemo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/thread/DealLockDemo.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="VolatileDemo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/threadvolatile/VolatileDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="264">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingleDemo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/single/SingleDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -58,6 +66,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/idea.properties" />
         <option value="$PROJECT_DIR$/src/thread/ThreadPoolDemo.java" />
         <option value="$PROJECT_DIR$/src/thread/DealLockDemo.java" />
+        <option value="$PROJECT_DIR$/src/threadvolatile/VolatileDemo.java" />
+        <option value="$PROJECT_DIR$/src/single/SingleDemo.java" />
       </list>
     </option>
   </component>
@@ -78,20 +88,19 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1680" />
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1007" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -108,12 +117,13 @@
               <item name="topideal-thread" type="b2602c69:ProjectViewProjectNode" />
               <item name="topideal-thread" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
+              <item name="single" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -140,31 +150,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DealLockDemo">
-    <configuration name="CallableDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.CallableDemo" />
-      <module name="topideal-thread" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="Application.SingleDemo">
     <configuration name="DealLockDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="thread.DealLockDemo" />
-      <module name="topideal-thread" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="ProdCons_TradCondDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.ProdCons_TradCondDemo" />
       <module name="topideal-thread" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -185,6 +173,17 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="SingleDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="single.SingleDemo" />
+      <module name="topideal-thread" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="single.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="ThreadPoolDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="thread.ThreadPoolDemo" />
       <module name="topideal-thread" />
@@ -192,6 +191,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="VolatileDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="threadvolatile.VolatileDemo" />
+      <module name="topideal-thread" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="threadvolatile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -238,19 +248,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.ProdCons_TradCondDemo" />
       <item itemvalue="Application.ProdConsumerBlockQueueDemo" />
-      <item itemvalue="Application.CallableDemo" />
       <item itemvalue="Application.ThreadPoolDemo" />
       <item itemvalue="Application.DealLockDemo" />
+      <item itemvalue="Application.VolatileDemo" />
+      <item itemvalue="Application.SingleDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SingleDemo" />
+        <item itemvalue="Application.VolatileDemo" />
         <item itemvalue="Application.DealLockDemo" />
         <item itemvalue="Application.ThreadPoolDemo" />
         <item itemvalue="Application.ProdConsumerBlockQueueDemo" />
-        <item itemvalue="Application.CallableDemo" />
-        <item itemvalue="Application.ProdCons_TradCondDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -264,45 +274,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557219517525</updated>
-      <workItem from="1557219520852" duration="40861000" />
+      <workItem from="1557219520852" duration="47967000" />
+      <workItem from="1557709645125" duration="1340000" />
+      <workItem from="1557717315950" duration="273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40861000" />
+    <option name="totallyTimeSpent" value="49580000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="23" width="1920" height="1007" extended-state="0" />
+    <frame x="1680" y="23" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5005325" side_tool="true" weight="0.41041666" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" weight="0.41318682" />
-      <window_info anchor="bottom" id="Version Control" weight="0.2125" />
-      <window_info anchor="bottom" id="Terminal" weight="0.85604393" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.15520833" weight="0.24973376" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2880724" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005325" side_tool="true" weight="0.41041666" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" weight="0.19886364" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.2125" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.85604393" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.15520833" weight="0.25274727" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.84479165" side_tool="true" weight="0.24973376" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2880724" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,13 +329,38 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/threadvolatile/VolatileDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/single/SingleDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/threadvolatile/VolatileDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/single/SingleDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/thread/SynchronousQueueDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -366,9 +403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -376,13 +410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="597">
           <caret line="29" column="26" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-            <element signature="e#1436#1437#0" expanded="true" />
-            <element signature="e#1550#1551#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -404,12 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4155">
           <caret line="525" column="23" selection-start-line="525" selection-start-column="23" selection-end-line="525" selection-end-column="23" />
-          <folding>
-            <element signature="e#34990#34991#0" expanded="true" />
-            <element signature="e#35017#35018#0" expanded="true" />
-            <element signature="e#35291#35292#0" expanded="true" />
-            <element signature="e#35374#35375#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -438,9 +459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="38" column="99" lean-forward="true" selection-start-line="38" selection-start-column="99" selection-end-line="38" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -454,7 +472,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="52.5" y="15.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="53.0" y="15.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -541,7 +559,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="217.5" y="175.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="218.0" y="175.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -574,10 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
           <caret line="133" column="15" selection-start-line="133" selection-start-column="8" selection-end-line="133" selection-end-column="15" />
-          <folding>
-            <element signature="e#2940#2941#0" expanded="true" />
-            <element signature="e#2990#2991#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -606,10 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="545">
           <caret line="259" column="30" selection-start-line="259" selection-start-column="11" selection-end-line="259" selection-end-column="30" />
-          <folding>
-            <element signature="e#7388#7389#0" expanded="true" />
-            <element signature="e#7427#7428#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -645,9 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="779">
           <caret line="55" column="101" selection-start-line="55" selection-start-column="101" selection-end-line="55" selection-end-column="101" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -655,9 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -665,9 +669,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicBoolean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1623">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicIntegerArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="125" column="45" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicLong.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicLongArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicMarkableReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/LongAdder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/threadvolatile/VolatileDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/single/SingleDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
